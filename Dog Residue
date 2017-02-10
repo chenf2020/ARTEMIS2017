@@ -1,0 +1,43 @@
+public void autonomousPeriod() {
+	timer.reset();
+	timer.start();
+
+}
+public void dogResidue{
+{
+//drive for 3 seconds
+	if (timer.get() < 3.0) {
+		robot.drive (0.5, 0.5);//go forwards
+	} else {
+		robot.Drive (0.0, 0.0); //stop robot
+//Wait
+        if timer.get() < 1.0 {
+	        robot.Drive (0.0, 0.0)
+
+//Go backwards
+	if (timer.get() < 0.5) {
+		robot.Drive (-0.5, -0.5);//go backwards
+	} else {
+		robot.Drive (0.0, 0.0);
+//Turn left
+	if (timer.get() < 0.5) {
+		robot.Drive (-0.5, 0.5);
+	} else {
+		robot.Drive (0.0, 0.0);
+//drive for 3 seconds
+		if (timer.get() < 3.0) {
+			robot.Drive (0.5, 0.5);
+	} else {
+		robot.Drive (0.0, 0.0);
+//turn right
+	if (timer.get() < 0.5) {
+		robot.Drive (0.5, -0.5);
+	} else {
+		robot.Drive (0.0, 0.0);
+//drive for 5 seconds
+	if (timer.get() < 5.0) {
+		robot.Drive(1.0, 1.0);
+	} else {
+		robot.Drive (0.0, 0.0);
+	}
+	
